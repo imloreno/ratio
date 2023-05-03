@@ -1,0 +1,109 @@
+.menu {
+  position: relative;
+  color: var(--txt-color2);
+  font-weight: 400;
+  font-size: 1.2rem;
+  width: 11rem;
+  padding-right: 2rem;
+  transition: width 0.5s;
+  user-select: none;
+}
+.menu_toggle {
+  width: 3rem;
+}
+.menu_toggle .menu__icon {
+  transform: rotate(0);
+}
+.menu_toggle p {
+  display: none;
+}
+.menu_toggle .menu__list_menuitem {
+  position: relative;
+  padding: 0.4rem 0;
+  column-gap: 0;
+  justify-content: center;
+}
+.menu_toggle .menu__list_menuitem:hover p {
+  display: block;
+  position: absolute;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  left: 130%;
+  color: var(--txt-color3);
+  background-color: var(--bg3);
+}
+.menu_toggle .menu__list_menuitem:hover p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.5rem 0 0.5rem 0.8rem;
+  border-color: transparent transparent transparent var(--bg3);
+  left: -0.5rem;
+  transform: rotate(180deg);
+}
+.menu_toggle .menu__list_icon {
+  font-size: 2rem;
+}
+
+.menu__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--txt-color3);
+}
+
+.menu__list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__list_menuitem {
+  display: flex;
+  column-gap: 0.3rem;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.menu__list_menuitem:hover {
+  color: var(--txt-color4);
+  background-color: var(--hover1);
+}
+.menu__list_active {
+  color: var(--txt-color4);
+}
+
+.menu__list_icon {
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+
+/*
+======================================= MENU ICON
+*/
+.menu__icon_container {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background: var(--bg2);
+  right: -0.8rem;
+  top: 4rem;
+  color: var(--txt-color1);
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 0.3rem solid var(--bg1);
+}
+.menu__icon {
+  font-size: 1.3rem;
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}

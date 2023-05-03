@@ -1,0 +1,71 @@
+:root {
+  --bg1: #0d0d0d;
+  --bg2: #c3d0e3;
+  --bg3: #5a3dcc;
+  --hover1: rgba(217, 217, 217, 0.07);
+  --txt-color1: #212528;
+  --txt-color2: #748594;
+  --txt-color3: white;
+  --txt-color4: #9074ff;
+  box-sizing: border-box;
+}
+
+/*
+============================ ESCENCIALS
+*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body,
+li,
+ul,
+div,
+main,
+section,
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+input,
+textarea,
+select,
+option,
+label,
+form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+/*
+============================ CUSTOM
+*/
+#root {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  background-color: var(--bg1);
+}
+.body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+main {
+  background-color: var(--bg2);
+  border-radius: 1rem;
+}
