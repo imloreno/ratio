@@ -2,10 +2,10 @@ import { useState } from "react";
 
 const useMenu = () => {
   const [toggle, setToggle] = useState(
-    localStorage.getItem("myCat") === "true" || false
+    localStorage.getItem("menu-toggle") === "true" || false
   );
   const handleToggle = () => {
-    localStorage.setItem("myCat", !toggle ? "true" : "false");
+    localStorage.setItem("menu-toggle", !toggle ? "true" : "false");
     setToggle(!toggle);
   };
 
