@@ -3,8 +3,8 @@
   color: var(--txt-color2);
   font-weight: 400;
   font-size: 1.2rem;
-  width: 11rem;
-  padding-right: 2rem;
+  width: 11.5rem; /*Must be 11.5rem*/
+  padding-right: 1.3rem;
   transition: width 0.5s;
   user-select: none;
 }
@@ -92,18 +92,18 @@
   position: absolute;
   display: grid;
   place-content: center;
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 2rem;
+  height: 2rem;
   background: var(--bg2);
   right: -0.8rem;
-  top: 4rem;
+  top: 3.6rem;
   color: var(--txt-color1);
   cursor: pointer;
   border-radius: 1rem;
   border: 0.3rem solid var(--bg1);
 }
 .menu__icon {
-  font-size: 1.3rem;
+  font-size: 1rem;
   transform: rotate(180deg);
   transition: transform 0.5s;
 }

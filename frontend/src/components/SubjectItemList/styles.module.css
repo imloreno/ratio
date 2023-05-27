@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.header {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.title {
+  max-width: 100%;
+  color: var(--bg5);
+  color: var(--txt-color5);
+}
+.divider {
+  width: auto;
+  border: unset;
+  border-top: 2px solid var(--txt-color5);
+  opacity: 0.45;
+}
+.optionContainer {
+  margin-left: 0.5rem;
+}

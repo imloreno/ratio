@@ -1,0 +1,77 @@
+.selectContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1rem;
+  align-items: center;
+  width: fit-content;
+  font-size: 0.8em;
+  color: var(--txt-color2);
+  gap: 0.2rem;
+  user-select: none;
+  cursor: pointer;
+}
+.selectContainer span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.iconContainer > [class="arrow"] {
+  transform: rotate(90deg);
+  font-size: 0.8rem;
+}
+.listSelect {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 110%;
+  overflow: hidden;
+  border-radius: 0.3rem;
+  background-color: var(--bg4);
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(114, 114, 114, 0.301);
+  border: thin solid rgba(192, 192, 192, 0.301);
+}
+.listSelect li {
+  padding: 0.5rem;
+}
+.listSelect li:hover {
+  background-color: var(--bg3);
+  color: var(--txt-color3);
+}
+
+/*
+=============================== MODAL WINDOW ===============================
+*/
+
+.isActive::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.isActive .listSelect {
+  display: block;
+  z-index: 2;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/*
+=============================== ANIMATIONS ===============================
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

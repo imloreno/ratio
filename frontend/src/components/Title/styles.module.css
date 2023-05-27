@@ -1,0 +1,20 @@
+.titleContainer {
+  overflow: hidden;
+}
+
+.titleText {
+  font-size: 1.3rem;
+}
+
+.subtitleText {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.headerText {
+  font-size: 1rem;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

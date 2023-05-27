@@ -1,0 +1,21 @@
+.frameBoxContainer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.frameBoxHeader {
+  background-color: var(--bg-hader);
+  color: var(--txt-color3);
+  padding: 0.7rem 1rem;
+}
+
+.frameConent {
+  padding: 1rem;
+  background-color: var(--bg4);
+  color: var(--txt-color1);
+  height: 100%;
+  overflow: auto;
+}

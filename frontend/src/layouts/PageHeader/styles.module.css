@@ -1,0 +1,36 @@
+.pageHeader {
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  background-color: var(--bg-hader);
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.iconContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 0.45rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.iconContainer:hover {
+  background-color: rgba(184, 184, 184, 0.13);
+}
+
+.iconContainer::after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: rgb(250, 56, 56);
+  top: 25%;
+  left: 25%;
+  border-radius: 0.5rem;
+}

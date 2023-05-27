@@ -1,4 +1,5 @@
 import Home from "./Home";
+import styles from "./styles.module.css";
 
 type PageList = {
   [key: string]: JSX.Element;
@@ -9,5 +10,5 @@ export const Pages = (page: string): JSX.Element => {
     home: <Home />,
     subjects: <div>Materias</div>,
   };
-  return <main className="main">{pages[page] || <Home />}</main>;
+  return <main className={styles.main}>{pages[page] || <Home />}</main>;
 };

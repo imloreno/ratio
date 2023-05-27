@@ -1,0 +1,22 @@
+.itemList {
+  display: grid;
+  grid-template-columns: 1fr 2.5rem;
+  background: var(--bg6);
+  border-radius: 0.3rem;
+  max-width: 100%;
+}
+
+.itemListContent {
+  padding: 0.4rem 0.6rem;
+  max-width: 100%;
+}
+
+.itemListLink {
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg3);
+  color: var(--txt-color3);
+  border-radius: 0 0.3rem 0.3rem 0;
+}

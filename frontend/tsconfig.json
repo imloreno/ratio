@@ -41,6 +41,12 @@
       "@assets/*": [
         "assets/*"
       ],
+      "@layouts/*": [
+        "layouts/*"
+      ],
+      "@features/*": [
+        "features/*"
+      ],
     }
   },
   "include": [

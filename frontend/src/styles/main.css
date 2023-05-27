@@ -2,11 +2,16 @@
   --bg1: #0d0d0d;
   --bg2: #c3d0e3;
   --bg3: #5a3dcc;
+  --bg4: #ffffff;
+  --bg5: #d9d9d9;
+  --bg6: #e4efff;
+  --bg-hader: #212528;
   --hover1: rgba(217, 217, 217, 0.07);
   --txt-color1: #212528;
   --txt-color2: #748594;
   --txt-color3: white;
   --txt-color4: #9074ff;
+  --txt-color5: #c3c5c8;
   box-sizing: border-box;
 }
 
@@ -55,17 +60,25 @@ li {
 #root {
   height: 100vh;
   width: 100vw;
-  padding: 2rem;
+  padding: 1.3rem;
   background-color: var(--bg1);
+  max-height: 100vh;
+  overflow: hidden;
 }
 .body {
   display: grid;
   grid-template-columns: auto 1fr;
   height: 100%;
-  font-family: "Rubik", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
+  overflow: hidden;
 }
 main {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
   background-color: var(--bg2);
   border-radius: 1rem;
+  height: 100%;
+  overflow: hidden;
 }

@@ -1,0 +1,22 @@
+/*
+=========================== COMPONENTS ===========================
+*/
+
+.button {
+}
+.input {
+}
+
+.scroll-bar::-webkit-scrollbar {
+  width: 0.65rem;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  background: var(--bg5);
+  border-radius: 0.5rem;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: var(--bg3);
+  border-radius: 0.5rem;
+}

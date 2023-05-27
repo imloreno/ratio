@@ -1,0 +1,26 @@
+.itemContainer {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+.metadataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.7em;
+  width: 100%;
+}
+.dueDate {
+  color: white;
+  padding: 0rem 0.3rem;
+  font-weight: 800;
+  background-color: rgb(88, 226, 106);
+  border-radius: 0.7rem;
+  margin: 0.3rem 0;
+}
+.subject {
+  font-weight: 600;
+  text-align: right;
+  margin-bottom: 0.3rem;
+}

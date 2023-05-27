@@ -13,6 +13,8 @@ export default defineConfig({
       "@interfaces": "/src/interfaces",
       "@styles": "/src/styles",
       "@assets": "/src/assets",
+      "@layouts": "/src/layouts",
+      "@features": "/src/features",
     },
   },
 });
