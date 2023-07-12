@@ -5,8 +5,8 @@ import ButtonV1 from '@components/Form/ButtonV1'
 
 const Form = Object.assign(FormContainer, {
   SelectV1 : SelectV1,
-  InputV1 : InputV1,
-  ButtonV1 : ButtonV1
+  InputV1,
+  ButtonV1
 })
 
 export default Form

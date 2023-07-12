@@ -9,8 +9,9 @@ type PageList = {
 export const Pages = (page: string): JSX.Element => {
   const pages: PageList = {
     home: <Home />,
-    login: <Login/>,
     subjects: <div>Materias</div>,
+    login: <Login/>,
+    signup: <Login/>,
   };
   return <main className={styles.main}>{pages[page] || <Home />}</main>;
 };

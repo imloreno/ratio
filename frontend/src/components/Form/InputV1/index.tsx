@@ -8,13 +8,15 @@ interface IInputProps extends ICustomizable {
   value?: string;
   onChange?: (e: any) => void;
   icon?: string;
+  autofocus?: boolean;
 }
 
 const InputV1 = (props: IInputProps) => {
+  const { className, value, icon } = props;
   return (
     <div className={style.inputContainer}>
-      {props.icon && <Icons value={props.icon} className={style.icon} />}
-      <input {...props} className={`${props.className} ${style.input}`} />
+      {icon && <Icons value={icon} className={style.icon} />}
+      <input {...props} className={`${className} ${style.input}`} autoFocus={props.autofocus}/>
     </div>
   );
 };

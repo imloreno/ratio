@@ -21,6 +21,12 @@ export const publicRoutes: IRoute[] = [
     path: "/login",
     hideLink: true,
   },
+  {
+    key: "signup",
+    label: "Signup",
+    path: "/signup",
+    hideLink: true,
+  },
 ];
 
 const useRoutes = () => {
