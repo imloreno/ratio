@@ -1,5 +1,7 @@
-import { BiHome, BiCategoryAlt, BiBell } from "react-icons/bi";
+import { BiHome, BiCategoryAlt, BiBell, BiArrowFromLeft } from "react-icons/bi";
 import { FaArrowRight, FaChevronRight } from "react-icons/fa";
+import { TbShieldLock } from "react-icons/tb";
+import { RiUser3Line } from "react-icons/ri";
 
 type IIcon = {
   [value: string]: JSX.Element;
@@ -16,6 +18,9 @@ const Icons = ({ value, className = "" }: Props): JSX.Element => {
     menu: <FaArrowRight className={className} />,
     notifications: <BiBell className={className} />,
     arrowRight: <FaChevronRight className={className} />,
+    lock: <TbShieldLock className={className} />,
+    user: <RiUser3Line className={className} />,
+    arrowLeft: <BiArrowFromLeft className={className} />,
   };
 
   return iconPack[value] || <BiHome className={className} />;

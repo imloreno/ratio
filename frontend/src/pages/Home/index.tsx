@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <PageHeader title="Sistema de administración" />
       <Pagecontent>
-        <FrameBox styles={{ width: "60%" }}>
+        <FrameBox styles={{ width: "70%" }}>
           <FrameBox.Header>
             <Title type="subtitle">Materias</Title>
           </FrameBox.Header>
@@ -28,7 +28,7 @@ const Home = () => {
           </FrameBox.Body>
         </FrameBox>
 
-        <FrameBox styles={{ width: "60%" }}>
+        <FrameBox styles={{ width: "70%" }}>
           <FrameBox.Header>
             <Title type="subtitle">Perfil</Title>
           </FrameBox.Header>

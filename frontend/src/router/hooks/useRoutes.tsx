@@ -15,6 +15,12 @@ export const publicRoutes: IRoute[] = [
     label: "Materias",
     path: "/materias",
   },
+  {
+    key: "login",
+    label: "Login",
+    path: "/login",
+    hideLink: true,
+  },
 ];
 
 const useRoutes = () => {

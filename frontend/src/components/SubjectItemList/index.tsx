@@ -2,7 +2,7 @@ import React from "react";
 import ItemList from "@components/ItemList";
 import Title from "@components/Title";
 import styles from "./styles.module.css";
-import SelectV1 from "@components/Input/SelectV1";
+import SelectV1 from "@components/Form/SelectV1";
 
 const SubjectItemList = () => {
   return (

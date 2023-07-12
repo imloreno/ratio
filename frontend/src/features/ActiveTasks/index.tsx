@@ -1,5 +1,4 @@
-import React from "react";
-import { TaskItemList } from "@components";
+import { TaskItemList } from "@components/index";
 import styles from "./styles.module.css";
 
 const ActiveTasks = () => {

@@ -1,0 +1,12 @@
+.formContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1.5rem 2rem;
+    min-width: 23rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+    border: .2rem solid var(--txt-color1);
+    background-color: var(--txt-color4);
+}

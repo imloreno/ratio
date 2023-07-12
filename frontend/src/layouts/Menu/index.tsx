@@ -16,7 +16,7 @@ const Menu = () => {
         <p>RATIO</p>
       </div>
       <ul className={styles.menu__list}>
-        {publicRoutes.map((route, index) => (
+        {publicRoutes.filter((route)=>!route.hideLink).map((route, index) => (
           <NavLink
             key={index}
             to={route.path}

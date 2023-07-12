@@ -1,21 +1,20 @@
-import React from "react";
-import styles from "./styles.module.css";
+import { ICustomizable } from "@interfaces/default";
+import style from "./styles.module.css";
 
-interface Props {
+interface Props extends ICustomizable{
   children: string;
-  className?: string;
   type?: "title" | "subtitle" | "header";
 }
 
 const Elements = {
-  title: (title: string) => <h1 className={styles.titleText}>{title}</h1>,
-  subtitle: (title: string) => <h2 className={styles.subtitleText}>{title}</h2>,
-  header: (title: string) => <h3 className={styles.headerText}>{title}</h3>,
+  title: (title: string) => <h1 className={style.titleText}>{title}</h1>,
+  subtitle: (title: string) => <h2 className={style.subtitleText}>{title}</h2>,
+  header: (title: string) => <h3 className={style.headerText}>{title}</h3>,
 };
 
-const Title = ({ children, className = "", type = "title" }: Props) => {
+const Title = ({ children, className = "", type = "title", styles={} }: Props) => {
   return (
-    <div className={`${styles.titleContainer} ${className}`}>
+    <div className={`${style.titleContainer} ${className}`} style={styles}>
       {Elements[type] ? Elements[type](children) : Elements["title"](children)}
     </div>
   );

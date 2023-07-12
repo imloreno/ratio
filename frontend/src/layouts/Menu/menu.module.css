@@ -5,7 +5,6 @@
   font-size: 1.2rem;
   width: 11.5rem; /*Must be 11.5rem*/
   padding-right: 1.3rem;
-  transition: width 0.5s;
   user-select: none;
 }
 .menu_toggle {
