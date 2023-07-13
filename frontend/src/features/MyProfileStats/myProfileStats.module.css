@@ -1,0 +1,7 @@
+.rate {
+    overflow: visible;
+}
+
+.rate::-webkit-scrollbar{
+    display: none;
+}

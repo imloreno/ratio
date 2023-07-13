@@ -1,0 +1,22 @@
+.profilePictureContainer{
+    text-align: center;
+    width: 5rem;
+}
+
+.profilePicture {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: .2rem solid var(--txt-color4);
+    overflow: hidden;
+}
+
+.profilePicture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rate{
+    font-size: .8em;
+    color: var(--txt-color4);
+}

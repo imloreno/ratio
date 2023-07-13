@@ -1,9 +1,7 @@
 import FrameBox from "@components/FrameBox";
 import Title from "@components/Title";
-import { ActiveTasks } from "@features/index";
-import { SubjectBlock } from "@features/index";
-import Pagecontent from "@layouts/PageContent";
-import PageHeader from "@layouts/PageHeader";
+import { ActiveTasks, MyProfileStats, SubjectBlock } from "@features/index";
+import { Pagecontent, PageHeader } from "@layouts/index";
 
 const Home = () => {
   return (
@@ -28,11 +26,13 @@ const Home = () => {
           </FrameBox.Body>
         </FrameBox>
 
-        <FrameBox styles={{ width: "70%" }}>
+        <FrameBox styles={{ width: "75%" }}>
           <FrameBox.Header>
-            <Title type="subtitle">Perfil</Title>
+            <Title type="subtitle">Mi estado</Title>
           </FrameBox.Header>
-          <FrameBox.Body> This is the body</FrameBox.Body>
+          <FrameBox.Body className="scroll-hidden">
+            <MyProfileStats />
+          </FrameBox.Body>
         </FrameBox>
       </Pagecontent>
     </>
