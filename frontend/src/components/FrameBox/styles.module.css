@@ -1,6 +1,4 @@
 .frameBoxContainer {
-  display: grid;
-  grid-template-rows: auto 1fr;
   width: 100%;
   border-radius: 0.5rem;
   overflow: hidden;

@@ -39,7 +39,7 @@ const MyResponsiveRadar = () => (
     keys={["rate"]}
     indexBy="attribute"
     maxValue={100}
-    margin={{ top: 0, right: 65, bottom: 0, left: 65 }}
+    margin={{ top: 0, right: 70, bottom: 0, left: 70 }}
     curve="linearClosed"
     borderWidth={2}
     colors="#5a3dcc"

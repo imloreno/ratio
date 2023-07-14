@@ -1,5 +1,4 @@
-import React from "react";
-import { ItemList, TextOneLine, Title } from "@components";
+import { ItemList, TextOneLine, Title } from "@components/index";
 import styles from "./styles.module.css";
 
 const TaskItem = () => {

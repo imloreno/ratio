@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import SubjectItemList from "@components/SubjectItemList";
+import { SubjectItemList } from "@components/index";
 
 const SubjectBlock = () => {
   return (

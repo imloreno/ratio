@@ -47,6 +47,9 @@
       "@features/*": [
         "features/*"
       ],
+      "@constants/*": [
+        "constants/*"
+      ],
     }
   },
   "include": [

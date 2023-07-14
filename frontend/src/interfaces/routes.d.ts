@@ -1,6 +1,8 @@
 export interface IRoute {
   key: string;
+  icon?: string;
   label: string;
   path: string;
-  hideLink?: boolean;
+  subRoutes?: IRoute[];
+  hidden?: boolean;
 }

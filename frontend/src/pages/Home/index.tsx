@@ -1,5 +1,4 @@
-import FrameBox from "@components/FrameBox";
-import Title from "@components/Title";
+import {Title, FrameBox} from "@components/index";
 import { ActiveTasks, MyProfileStats, SubjectBlock } from "@features/index";
 import { Pagecontent, PageHeader } from "@layouts/index";
 

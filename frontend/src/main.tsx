@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Router from "@router/index.tsx";
+import Router from "./Router";
 import "@styles/main.css";
 import "@styles/escentials.css";
 

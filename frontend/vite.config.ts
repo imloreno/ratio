@@ -15,6 +15,7 @@ export default defineConfig({
       "@assets": "/src/assets",
       "@layouts": "/src/layouts",
       "@features": "/src/features",
+      "@constants": "/src/constants",
     },
   },
 });

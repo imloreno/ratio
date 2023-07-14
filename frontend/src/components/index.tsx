@@ -7,3 +7,4 @@ export { default as SubjectItemList } from "@components/SubjectItemList";
 export { default as TextOneLine } from "@components/TextOneLine";
 export { default as TaskItem } from "@components/TaskItem";
 export { default as Form } from "@components/Form";
+export { default as ProfileStats } from "@components/ProfileStats";

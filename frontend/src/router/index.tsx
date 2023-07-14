@@ -1,51 +1,64 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Menu } from "@layouts/index";
+import { IRoute } from "@interfaces/routes";
+import { ROUTES, SUB_ROUTES } from "@constants/index";
+import { routeList } from "./routeList";
+import { Home, Subjects, Login } from "@pages/index";
+import { SubjectDetails } from "@features/index";
+import style from "./styles.module.css";
 
-import useRoutes from "./hooks/useRoutes";
-import Menu from "@layouts/Menu";
+type PageList = {
+  [key: string]: JSX.Element;
+};
 
-import temp_img from "@assets/temp-schema.png";
+const Router = () => (
+  <BrowserRouter>
+    <div className="body">
+      <Menu publicRoutes={routeList || []} />
+      <Routes>
+        {routeList?.length > 0 &&
+          routeList.map((route: IRoute, index: number) => (
+            <Route
+              key={index}
+              path={route.path}
+              element={<Page page={route.key} />}
+            >
+              {route?.subRoutes &&
+                route.subRoutes.map((subRoute: IRoute) => {
+                  return (
+                    <Route
+                      key={subRoute.key}
+                      path={subRoute.path}
+                      element={<SubPage page={subRoute.key} />}
+                    />
+                  );
+                })}
+            </Route>
+          ))}
+      </Routes>
+    </div>
+  </BrowserRouter>
+);
 
-const Router = () => {
-  const { routes } = useRoutes();
+// Page list builder
+const Page = (props: { page: string }): JSX.Element => {
+  const pages: PageList = {
+    [ROUTES.HOME]: <Home />,
+    [ROUTES.SUBJECTS]: <Subjects />,
+    [ROUTES.LOGIN]: <Login />,
+    [ROUTES.SIGNUP]: <Login />,
+    [ROUTES.REDIRECT]: <Navigate to="/" />,
+  };
+  return <main className={style.main}>{pages[props.page] || <Home />}</main>;
+};
 
-  // To rmeove later
-  const [show, setshow] = React.useState(false);
-  const handleShow = () => setshow(!show);
-
-  return (
-    <BrowserRouter>
-      <div className="body">
-        <button
-          style={{ position: "fixed", top: 0, left: 0, zIndex: 11 }}
-          onClick={handleShow}
-        >
-          Show
-        </button>
-        <img
-          src={temp_img}
-          alt="temp"
-          style={{
-            position: "fixed",
-            width: "100%",
-            height: "auto",
-            left: 0,
-            top: 0,
-            opacity: show ? 0.3 : 0,
-            zIndex: 10,
-            pointerEvents: "none",
-          }}
-        />
-        <Menu />
-        <Routes>
-          {routes.length &&
-            routes.map((route, index) => (
-              <Route key={index} path={route.path} element={route.element} />
-            ))}
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
+// SubPage list builder
+const SubPage = (props: { page: string }): JSX.Element => {
+  const pages: PageList = {
+    [SUB_ROUTES.SUBJECT_DETAILS]: <SubjectDetails />,
+    [SUB_ROUTES.SUBJECT_DESCRIPTION]: <SubjectDetails />,
+  };
+  return pages[props.page] || <Home />;
 };
 
 export default Router;

@@ -7,6 +7,7 @@
   --bg6: #e4efff;
   --bg-hader: #212528;
   --hover1: rgba(217, 217, 217, 0.07);
+  --hover2: rgba(0, 0, 0, .08);
   --txt-color1: #212528;
   --txt-color2: #748594;
   --txt-color3: white;
@@ -49,6 +50,7 @@ form {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 600;
 }
 li {
   list-style: none;

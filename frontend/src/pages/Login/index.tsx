@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import Form from "@components/Form";
-import Title from "@components/Title";
+import {Form, Title} from "@components/index";
 import Pagecontent from "@layouts/PageContent";
 import style from "./login.module.css";
 
@@ -17,7 +16,6 @@ interface ILoginText {
 const Login = () => {
   const location = useLocation();
   const path = location.pathname.replace("/", "");
-  const lastPath = location.state?.lastPath ?? "";
   const { title, link, button } = textGenerator(path);
 
   return (

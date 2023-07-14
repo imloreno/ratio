@@ -9,6 +9,7 @@
 }
 .menu_toggle {
   width: 3rem;
+  z-index: 2;
 }
 .menu_toggle .menu__icon {
   transform: rotate(0);

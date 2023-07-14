@@ -1,0 +1,23 @@
+.container {
+    background-color: var(--bg4);
+    width: 100%;
+}
+
+.menuList {
+    display: grid;
+    grid-auto-flow: column;
+    width: 100%;
+}
+
+.menuItemContainer {
+    display: flex;
+    justify-content: center;
+    padding: .6rem 1rem;
+    border-bottom: .13rem solid transparent;
+}
+
+.linkActive {
+    color: var(--txt-color4);
+    border-bottom: .13rem solid var(--txt-color4);
+    background: var(--hover2);
+}
