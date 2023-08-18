@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <>
       <PageHeader title="Sistema de administración" />
-      <Pagecontent>
-        <FrameBox styles={{ width: "70%" }}>
+      <Pagecontent styles={{gridAutoColumns: ".8fr 1fr .8fr"}}>
+        <FrameBox>
           <FrameBox.Header>
             <Title type="subtitle">Materias</Title>
           </FrameBox.Header>
@@ -25,7 +25,7 @@ const Home = () => {
           </FrameBox.Body>
         </FrameBox>
 
-        <FrameBox styles={{ width: "75%" }}>
+        <FrameBox>
           <FrameBox.Header>
             <Title type="subtitle">Mi estado</Title>
           </FrameBox.Header>

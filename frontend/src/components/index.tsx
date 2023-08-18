@@ -8,3 +8,5 @@ export { default as TextOneLine } from "@components/TextOneLine";
 export { default as TaskItem } from "@components/TaskItem";
 export { default as Form } from "@components/Form";
 export { default as ProfileStats } from "@components/ProfileStats";
+export { default as Gallery } from "@components/Gallery";
+export { default as Filters } from "@components/Filters";

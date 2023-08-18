@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem .6rem .5rem 0;
+    color: var(--txt-color4);
+}
+
+.imgContainer {
+    display: inline-flex;
+    column-gap: .4rem;
+    flex-wrap: nowrap;
+    padding-bottom: .5rem;
+    overflow-x: auto;
+}
+
+.gallery {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.icon {
+    font-size: 1.5rem;
+}

@@ -4,7 +4,7 @@ import { IRoute } from "@interfaces/routes";
 import { ROUTES, SUB_ROUTES } from "@constants/index";
 import { routeList } from "./routeList";
 import { Home, Subjects, Login } from "@pages/index";
-import { SubjectDetails } from "@features/index";
+import { SubjectDescription, Students } from "@features/index";
 import style from "./styles.module.css";
 
 type PageList = {
@@ -55,8 +55,8 @@ const Page = (props: { page: string }): JSX.Element => {
 // SubPage list builder
 const SubPage = (props: { page: string }): JSX.Element => {
   const pages: PageList = {
-    [SUB_ROUTES.SUBJECT_DETAILS]: <SubjectDetails />,
-    [SUB_ROUTES.SUBJECT_DESCRIPTION]: <SubjectDetails />,
+    [SUB_ROUTES.SUBJECT_DESCRIPTION]: <SubjectDescription />,
+    [SUB_ROUTES.SUBJECT_DETAILS]: <Students />,
   };
   return pages[props.page] || <Home />;
 };

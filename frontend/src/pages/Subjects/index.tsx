@@ -1,5 +1,5 @@
 import { Navigate, Outlet, useLocation } from "react-router-dom";
-import { Title, FrameBox } from "@components/index";
+import { Title, FrameBox, Filters } from "@components/index";
 import { ActiveTasks } from "@features/index";
 import { Pagecontent, PageHeader } from "@layouts/index";
 import { memo } from "react";
@@ -11,17 +11,17 @@ const Subjects = () => {
   return pathList.length != 2 ? (
     <>
       <PageHeader title="Materias" />
-      <Pagecontent>
+      <Pagecontent styles={{ gridAutoColumns: "1fr .5fr" }}>
         <FrameBox>
-          <FrameBox.Header styles={{ background: "none" }}>
-            filter list
-          </FrameBox.Header>
+          <Filters>
+            <Filters.SelectV2 />
+          </Filters>
           <FrameBox.Body styles={{ background: "none" }}>
             <ActiveTasks />
           </FrameBox.Body>
         </FrameBox>
 
-        <FrameBox styles={{ width: "35rem" }}>
+        <FrameBox>
           <FrameBox.Header>
             <Title type="subtitle">Detalles</Title>
           </FrameBox.Header>
@@ -30,7 +30,7 @@ const Subjects = () => {
               Descripcion
             </FrameBox.SubMenu.Option>
             <FrameBox.SubMenu.Option link="details">
-              Detalles
+              Estudiantes
             </FrameBox.SubMenu.Option>
           </FrameBox.SubMenu>
           <FrameBox.Body>

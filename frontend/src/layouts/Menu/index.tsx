@@ -11,8 +11,6 @@ const Menu = (props: any) => {
   const { toggle, handleToggle } = useMenu();
   const { publicRoutes } = props;
 
-  console.log(publicRoutes);
-
   return (
     <nav className={`${styles.menu} ${toggle && styles.menu_toggle}`}>
       <div className={styles.menu__logo}>

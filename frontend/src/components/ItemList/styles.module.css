@@ -1,9 +1,11 @@
 .itemList {
   display: grid;
   grid-template-columns: 1fr 2.5rem;
-  background: var(--bg6);
-  border-radius: 0.3rem;
+  background: var(--bg4);
+  border-radius: 0.5rem;
   max-width: 100%;
+  box-shadow: 0 0 .5rem rgb(207, 207, 207);
+  border: 1px solid var(--bg3);
 }
 
 .itemListContent {
